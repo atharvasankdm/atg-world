@@ -1,0 +1,51 @@
+.main-register-div{
+    height:100%;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.top-message-div{
+    height: 50px;
+    background-color:#EFFFF4;;
+    color: #008A45;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.register-fill-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.register-options{
+    width:100%
+}
+
+
+.form-inputs{
+    width: 90%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+
+   
+}
+.form-input-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-inputs input{
+    width: 100%;
+    height: 46px;
+    padding-left: 12px;
+}

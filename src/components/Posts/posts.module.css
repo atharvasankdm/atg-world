@@ -1,0 +1,101 @@
+.post-header-container{
+    height: 56px;
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr 200px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 30px;
+    
+}
+.post-navigation{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'IBM Plex Sans', sans-serif;
+   
+
+  
+}
+.post-navigation li{
+   list-style: none;
+   margin-right: 20px;
+   font-size: 16px;
+   color: #8A8A8A;
+  
+}
+.post-navigation ul{
+    display: flex;
+    
+   
+}
+
+.post-navigation li:first-child{
+    color: black;
+    text-decoration: underline;
+    
+}
+.post-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column-start: 3;
+    grid-column-end: 4;
+   
+
+}
+.post-btns button{
+    width: 98px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.post-btns-btn{
+    width: 133px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-right: 16px;
+   
+ 
+}
+
+.post-btns-btn:first-child{
+    background-color: #EDEEF0;
+    color: black;
+}
+.post-btns-btn:nth-child(2){
+    background-color: #2F6CE5;
+    color: white;
+}
+
+.post-section-container{
+    display: grid;
+    grid-template-columns: 200px 3fr  1fr 200px;
+}
+
+.posts-container{
+ height: fit-content;
+   
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.location-container{
+    grid-column-start: 3;
+    grid-column-end: 4;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.location-detail{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:0.4px solid #B8B8B8 ;
+}

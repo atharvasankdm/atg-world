@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Banner from './components/Banner/Banner';
+import Posts from './components/Posts/Posts';
+import { useState } from 'react';
+import RegisterForm from './components/RegisterForm/RegisterForm';
+
+
+
 
 function App() {
+
+  const [FormIsShown,setFormIsShown] = useState(false)
+
+  const showFormHandler = () =>{
+    setFormIsShown(true)
+  }
+  
+  const hideFormHandler = () =>{
+    setFormIsShown(false)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <Header onShowForm={showFormHandler}/>
+    <Banner/>
+    <Posts/>
+    {FormIsShown && <RegisterForm onClose={hideFormHandler}/> }
+    
+   
+    
     </div>
   );
 }
